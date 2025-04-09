@@ -20,7 +20,8 @@ YCM-generator's fake-toolchanin approach.
 
 This project is a fork of [compiledb](https://github.com/nickdiego/compiledb) maintained
 by [Nick Yamane](https://github.com/nickdiego). Since the PRs to the origin were pending and inactive for quite a long
-time, e.g., [this](https://github.com/nickdiego/compiledb/pull/93), here is an attempt to patch the origin project with this new package name called `compiledb-plus`.
+time, e.g., [this](https://github.com/nickdiego/compiledb/pull/93), here is an attempt to patch the origin project with
+this new package name called `compiledb-plus`.
 
 We express our gratitude to the original author(s) for their valuable contribution which made this fork possible. Any
 issues, questions, or contributions pertaining to the additions in this fork should be directed to this repository, not
@@ -39,6 +40,9 @@ to the original author(s).
 - Supports Python 2.x and 3.x (for now, tested only with 2.7 and 3.6 versions)
 
 ## Usage
+
+**NB**: In order to generate the correct compilation database, it is important to run the build command with only **one
+** single core, e.g., `make -j1`.
 
 `compiledb-plus` provides a `make` python wrapper script which, besides to execute the make
 build command, updates the JSON compilation database file corresponding to that build,
